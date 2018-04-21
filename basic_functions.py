@@ -2,18 +2,18 @@
 import math
 import numpy as np
 
-def basic_sigmoid(x):
+def sigmoid(x):
     """
-    Computes sigmoid of a scalar x.
+    Computes the sigmoid of x
 
     Arguments:
-    x -- A scalar
+    x -- A scalar or numpy array of any size
 
     Return:
     s -- sigmoid(x)
     """
     
-    s = 1/(1 + math.exp(-x))
+    s = 1/(1 + np.exp(-x))
     
     return s
 
